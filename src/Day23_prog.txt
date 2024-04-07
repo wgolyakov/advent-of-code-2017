@@ -1,0 +1,20 @@
+val a = 1
+var h = 0
+var b = 65
+var c = b
+if (a != 0) {
+    b = b * 100 + 100000
+    c = b + 17000
+}
+while (true) {
+    var f = 1
+    for (d in 2 .. b) {
+        for (e in 2 .. b) {
+            if (d * e == b) f = 0
+        }
+    }
+    if (f == 0) h++
+    if (b == c) break
+    b += 17
+}
+return h
